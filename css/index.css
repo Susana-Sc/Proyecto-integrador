@@ -1,0 +1,164 @@
+* {
+  font-family: Optima Medium;
+  background-color: #fbfcfc;
+}
+
+@font-face {
+  font-family: "Optima Medium";
+  src: url("../font/Optima\ Medium.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+#logo {
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#nosotros,
+#catalogo {
+  background-color: rgb(192, 206, 214);
+  padding: 20px;
+  text-align: center;
+  width: 550px;
+}
+
+.somos {
+  text-align: center;
+  font-size: 20px;
+}
+
+.navegador {
+  display: flex; /* Activamos flexbox */
+  justify-content: center; /* Centramos los elementos horizontalmente */
+  align-items: center; /* Centramos los elementos verticalmente (opcional) */
+  font-size: 20px;
+}
+
+.navegador ul {
+  list-style-type: none; /* Quitamos los puntos de la lista */
+  padding: 0; /* Quitamos el padding */
+  margin: 0; /* Quitamos el margin */
+  display: flex; /* Usamos flexbox también en el ul */
+}
+
+.navegador li {
+  margin: 0 20px; /* Espaciado entre los elementos */
+}
+
+.navegador a {
+  text-decoration: none; /* Quitamos el subrayado de los enlaces */
+  color: #000; /* Color del texto */
+}
+
+.option-menu {
+  padding: 6px;
+  border-bottom: 2px solid;
+  border-color: rgb(192, 206, 214);
+}
+
+.formulario,
+.derechos {
+  text-align: center;
+}
+
+#espacio {
+  margin: 20px 20px 20px;
+  padding: -30px;
+}
+
+.contenido-formulario {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.quienes-somos {
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.boton_enviar {
+  padding: 10px;
+  font-size: 16px;
+  background-color: rgb(192, 206, 214);
+  border-radius: 20px;
+  height: 40px;
+  width: 110px;
+  font-weight: bold;
+}
+
+.boton_enviar:hover {
+  background-color: rgba(20, 27, 129, 0.514);
+  color: rgba(255, 255, 255, 0.884);
+}
+
+.contenedor-formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 100vh; /* Esto asegura que el contenedor ocupe toda la altura de la pantalla */
+  width: 50%;
+}
+
+.form-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.formulario {
+  background-color: #fbfcfc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.479);
+  width: 400px;
+  height: 515px;
+}
+
+.formulario h2 {
+  margin-top: 50px;
+}
+
+input:hover[type="text"] {
+  border-color: rgb(192, 206, 214);
+  box-shadow: 0 0 5px rgb(0, 68, 255);
+  outline: none;
+}
+
+.campos_formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 25%;
+  }
+
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
+
+img {
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+
+  animation-timeline: --image;
+  animation-name: show;
+
+  animation-range: entry 25% cover 30%;
+  animation-fill-mode: both;
+}

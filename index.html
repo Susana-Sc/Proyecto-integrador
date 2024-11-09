@@ -2,126 +2,94 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MAGITUPIEL</title>
+    <link rel="stylesheet" href="./css/index.css" />
 </head>
 
 <body>
-    <header>
-        <img width="300" src="./img/logo MAGITUPIEL.JPG" alt="">
-        <h2>Quienes Somos</h2>
-        <p>Somos una empresa dedicada a la fabricación, distribución y venta de productos para el cuidado de la piel,
-            <br>
-            en MAGITUPIEL, estamos comprometidos con tu bienestar, ofreciéndote productos que puedan cubrir tus
-            necesidades <br>
-            Nuestro objetivo es proporcionar soluciones de cuidado de la piel que respeten tanto tu salud como el medio
-            ambiente. </p>
-    </header>
-    <!-- Página de Servicios -->
-    <section id="Productos">
-        <h2>Nuestros Productos</h2>
+    <div id="espacio">
+        <header>
+            <img id="logo" src="./img/logo MAGITUPIEL-Photoroom.png" alt="" />
+            <section>
+                <!-- <h2 id="catalogo">Nuestros Productos</h2> -->
+                <nav class="navegador">
+                    <ul>
+                        <li class="option-menu">
+                            <a href="/cuidado_piel.html">Cuidado de la piel</a>
+                        </li>
+                        <li class="option-menu">
+                            <a href="/cuidado_capilar.html">Cuidado capilar</a>
+                        </li>
+                        <li class="option-menu">
+                            <a href="/cuidado_facil.html">Cuidado facial</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+        </header>
 
-        <nav></nav>
-        <ul>
-            <li><a href="#crema-manos-500">Crema de manos dama 500ml</a></li>
-            <li><a href="#crema-manos-250">Crema de manos para hombre 250ml</a></li>
-            <li><a href="#crema-manos-125">Crema de manos para hombre 125ml</a></li>
-            <li><a href="#shampoo-natural-400">Shampoo natural 400ml</a></li>
-            <li><a href="#tratamiento-capilar-120">Tratamiento capilar 120ml</a></li>
-            <li><a href="#nutricion-acondicionador-400">Nutricion + Acondicionador 400ml</a></li>
-            <li><a href="#crema-peinar-400">Crema de peinar 400ml</a></li>
-            <li><a href="#agua-micelar-30">Agua micelar suero facial 30ml</a></li>
-        </ul>
-        </nav>
+        <div class="contenido-formulario">
+            <div class="quienes-somos">
+                <h2 id="nosotros">Quienes Somos</h2>
+                <p class="somos">
+                    Somos una empresa dedicada a la fabricación, distribución y venta de
+                    productos para el cuidado de la piel,
+                    <br />
+                    en MAGITUPIEL, estamos comprometidos con tu bienestar, ofreciéndote
+                    productos que puedan cubrir tus necesidades. <br />
+                    Nuestro objetivo es proporcionar soluciones de cuidado de la piel
+                    que respeten tanto tu salud como el medio ambiente.
+                </p>
+                <img width="320" src="./img/imagen final-Photoroom.png" alt="" />
+            </div>
 
-        <h3>Cuidado de la piel</h3>
+            <div class="contenedor-formulario">
+                <section class="formulario">
+                    <h2>Para una mejor asesoria, llena este formulario</h2>
 
-        <h4 id="crema-manos-500">Crema de manos dama 500ml</h4>
-        <p>Esta crema corporal contien extrato de uva, cannabis, te verde y vitamina E<br>
-            Ayuda a que tu piel se hidrate y se aclaren manchas causadas por el sol y es ideal para hacer masajes
-            corporales <br>
-            Su valor es de $38.000</p>
-        <img width="80" src="./img/crema mujer.JPG" alt="">
+                    <form action="#" method="post" class="form-home">
+                        <div class="campos_formulario">
+                            <label for="">Nombre completo: </label><input type="text" name="" id="" />
+                        </div>
+                        <div class="campos_formulario">
+                            <label for="">Número de contacto: </label><input type="text" name="" id="" />
+                        </div>
+                        <div class="campos_formulario">
+                            <label for="">Lugar de residencia: </label><input type="text" name="" id="" />
+                        </div>
 
-        <h4 id="crema-manos-250">Crema de manos para hombre 250ml</h4>
-        <p>Esta crema corporal contien extrato de uva, cannabis, te verde y vitamina E<br>
-            Ayuda a que tu piel se hidrate y se aclaren manchas causadas por el sol y es ideal para hacer masajes
-            corporales <br>
-            Su valor es de $28.000</p>
-        <img width="80" src="./img/crema de hombre.jpg" alt="">
+                        <!-- productos despegables -->
+                        <div class="campos_formulario">
+                            <label>En que producto estas interesad@: </label>
+                            <input list="producto" />
+                            <datalist id="producto">
+                                <option value="Crema de manos dama 500ml"></option>
+                                <option value="Crema de manos para hombre 250ml"></option>
+                                <option value="Crema de manos para hombre 125ml"></option>
+                                <option value="Shampoo natural 400ml"></option>
+                                <option value="Tratamiento capilar 120ml"></option>
+                                <option value="Nutricion + Acondicionador 400ml"></option>
+                                <option value="Crema de peinar 400ml"></option>
+                                <option value="Agua micelar suero facial 30ml"></option>
+                            </datalist>
+                        </div>
+                        <button class="boton_enviar" type="submit">Enviar</button>
+                    </form>
+                    <br />
+                    <h3>
+                        ¡Ahora si! Estas a un paso de <br />
+                        empezar a consentir tu piel
+                    </h3>
+                </section>
+            </div>
+        </div>
 
-        <h4 id="crema-manos-125">Crema de manos para hombre 125ml</h4>
-        <p>Esta crema corporal contien extrato de uva, cannabis, te verde y vitamina E<br>
-            Ayuda a que tu piel se hidrate y se aclaren manchas causadas por el sol y es ideal para hacer masajes
-            corporales <br>
-            Su valor es de $20.000</p>
-        <img width="80" src="./img/hombre 125.jpg" alt="">
-
-        <h3>Cuidado capilar</h3>
-        <h4 id="shampoo-natural-400">Shampoo natural 400ml</h4>
-        <p>Aporta nutricion, fortalecimiento, previene la caida del cabello, elimina el frizz y aporta brillo, suavidad
-            y volumen<br>
-            Su valor es de $28.000</p>
-        <img width="80" src="./img/shampoo.jpg" alt="">
-
-        <h4 id="tratamiento-capilar-120">Tratamiento capilar 120ml</h4>
-        <p>Nutre, fortalece, suaviza y protege <br>
-            Es ideal para cabellos maltratados ya que es enriquecido con extractos naturales como el pantenol, colageno
-            y ceramidas<br>
-            Su valor es de $28.000</p>
-        <img width="110" src="./img/tratamiento.jpg" alt="">
-
-        <h4 id="nutricion-acondicionador-400">Nutricion + Acondicionador 400ml </h4>
-        <p>Protege, regenera, suaviza y da sedosidad<br>
-            Suaviza el cabello y facilita su peinado<br>
-            Su valor es de $27.000</p>
-        <img width="80" src="./img/acondicionador.jpg" alt="">
-
-        <h4 id="crema-peinar-400">Crema de peinar 400ml </h4>
-        <p>Protege, regenera, da volumen, anti frizz y suaviza<br>
-            Facilita la definicion de las ondas o rizos<br>
-            Su valor es de $28.000</p>
-        <img width="80" src="./img/crema de peinar.jpg" alt="">
-
-        <h3>Cuidado facial</h3>
-        <h4 id="agua-micelar-30">Agua micelar suero facial 30ml</h4>
-        Es una mezcla unica de aceites y extractos naturales con pepino, vitamina E, colageno y aloe vera<br>
-        Este producto suaviza, aclara, nutre y disminuye lineas de expresion
-        Su valor es de $25.000</p>
-        <img width="100" src="./img/agua micelar.jpg" alt="">
-
-
-        <h2>Para una mejor asesoria, llena este formulario</h2>
-        <!-- Formulario -->
-        <form action="#" method="post">
-            <p>Nombre completo: <input type="text" required name="nombre"></p>
-            <p>Numero de contacto: <input type="text" placeholder="" name="Numero"></p>
-            <p>Lugar de residencia: <input type="text" required name="residencia"></p>
-            <!-- productos despegables -->
-            <p>En que producto estas interesad@:<input list="producto"></p>
-            <datalist id="producto">
-                <option value="Crema de manos dama 500ml"> </option>
-                <option value="Crema de manos para hombre 250ml"></option>
-                <option value="Crema de manos para hombre 125ml"></option>
-                <option value="Shampoo natural 400ml"></option>
-                <option value="Tratamiento capilar 120ml"></option>
-                <option value="Nutricion + Acondicionador 400ml"></option>
-                <option value="Crema de peinar 400ml"></option>
-                <option value="Agua micelar suero facial 30ml"></option>
-            </datalist>
-            <button type="submit">Enviar</button>
-        </form>
-        <br />
-
-        <img width="200" src="./img/imagen final.jpg" alt="">
-        <h3>¡Ahora si! Estas a un paso de <br>
-            empezar a consentir tu piel</h3>
-
-    </section>
-    <footer>
-        <p>Todos los derechos son reservados &copy; 2024 Magitupiel</p>
-    </footer>
+        <footer class="derechos">
+            <p>Todos los derechos son reservados &copy; 2024 Magitupiel</p>
+        </footer>
+    </div>
 </body>
 
 </html>
