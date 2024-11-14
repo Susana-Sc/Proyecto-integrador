@@ -30,6 +30,19 @@
   width: 80vh;
 }
 
+.inicio {
+  display: flex;
+  justify-content: end;
+  align-items: right;
+}
+
+.inicio a {
+  text-decoration: none; /* Quitamos el subrayado de los enlaces */
+  color: #000; /* Color del texto */
+  border-bottom: 2px solid;
+  border-color: rgb(192, 206, 214);
+}
+
 #cuidado {
   display: flex;
   flex-direction: column;

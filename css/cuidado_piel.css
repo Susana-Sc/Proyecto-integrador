@@ -22,12 +22,14 @@
 .manos_500_250 {
   display: flex;
   justify-content: center;
+  padding-inline: 60px;
 }
 
 .manos {
   margin: 10px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.479);
+  padding-inline: 10px;
 }
 
 .manos-125 {
@@ -37,6 +39,19 @@
   padding: 10px;
   height: 82vh;
   width: 80vh;
+}
+
+.inicio {
+  display: flex;
+  justify-content: end;
+  align-items: right;
+}
+
+.inicio a {
+  text-decoration: none; /* Quitamos el subrayado de los enlaces */
+  color: #000; /* Color del texto */
+  border-bottom: 2px solid;
+  border-color: rgb(192, 206, 214);
 }
 
 #espacio {
