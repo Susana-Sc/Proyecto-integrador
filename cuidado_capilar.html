@@ -1,54 +1,151 @@
-<link rel=" stylesheet" href="./css/cuidado_capilar.css" />
+<!DOCTYPE html>
+<html lang="es">
 
-<nav class="inicio">
-    <a href="/index.html">Volver al inicio</a>
-</nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuidado Capilar</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/cuidado_capilar.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
 
-<section>
+<body>
 
-    <h3 id="capilar">Cuidado capilar</h3>
-    <div class="shampoo_tratamiento">
-        <div class="content">
-            <h4 id="shampoo-natural-400">Shampoo natural 400ml</h4>
-            <p>
-                Aporta nutricion, fortalecimiento, previene la caida del cabello, elimina
-                el frizz y aporta brillo, suavidad y volumen<br />
-                Su valor es de $28.000
-            </p>
-            <img width="80" src="./img/shampoo.jpg" alt="" />
+    <header>
+        <div class="container text-center">
+            <div class="row justify-content-end align-items-center">
+                <!-- Logo -->
+                <div class="col-6 col-md-4 text-center">
+                    <img class="logo" src="./img/home/logo_magitupiel.png" alt="Logo">
+                </div>
+
+                <!-- Iconos -->
+                <div class="col-6 col-md-4 text-end ">
+                    <img class="mx-2 icono" src="./img/home/lupa.png" alt="Buscar">
+                    <img class="mx-2 icono" src="./img/home/carrito.png" alt="Carrito">
+                </div>
+            </div>
         </div>
 
-        <div class="content">
-            <h4 id="tratamiento-capilar-120">Tratamiento capilar 120ml</h4>
-            <p>
-                Nutre, fortalece, suaviza y protege <br />
-                Es ideal para cabellos maltratados ya que es enriquecido con extractos
-                naturales como el pantenol, colageno y ceramidas<br />
-                Su valor es de $28.000
-            </p>
-            <img width="160" src="./img/tratamiento-Photoroom.png" alt="" />
-        </div>
-    </div>
+        <!-- Menú de Navegación -->
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion"
+                    aria-controls="menuNavegacion" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuNavegacion">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="/index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="/cuidado_corporal.html">Cuidado Corporal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="/cuidado_capilar.html">Cuidado Capilar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="/cuidado_facil.html">Cuidado Facial</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-    <div class="acondicionador_crema">
-        <div class="content">
-            <h4 id="nutricion-acondicionador-400">Nutricion + Acondicionador 400ml</h4>
-            <p>
-                Protege, regenera, suaviza y da sedosidad<br />
-                Suaviza el cabello y facilita su peinado<br />
-                Su valor es de $27.000
-            </p>
-            <img width="80" src="./img/acondicionador.jpg" alt="" />
+    <section class="container my-2">
+        <div class="text-center mb-4">
+            <h3 id="capilar">Cuidado Capilar</h3>
         </div>
 
-        <div class="content">
-            <h4 id="crema-peinar-400"> Crema de peinar 400ml</h4>
-            <p>
-                Protege, regenera, da volumen, anti frizz y suaviza<br />
-                Facilita la definicion de las ondas o rizos<br />
-                Su valor es de $28.000
-            </p>
-            <img width="80" src="./img/crema de peinar.jpg" alt="" />
+        <div class="d-flex row justify-content-center my-2">
+            <div class="col-md-4">
+                <div class="card h-100 shampoo_tratamiento">
+                    <img src="./img/cuidado-capilar/shampoo.jpg" class="card-img-top mt-4" alt="Shampoo natural 400ml">
+                    <div class="card-body">
+                        <h4 class="card-title">Shampoo natural 400ml</h4>
+                        <p class="card-text">
+                            Aporta nutricion, fortalecimiento, previene la caida del cabello, elimina
+                            el frizz y aporta brillo, suavidad y volumen <br />
+                            <strong>Valor: $28.000</strong> <br>
+                            <a href="#" class="btn btn-primary my-3">Agregar al carrito</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 shampoo_tratamiento">
+                    <img src="./img/cuidado-capilar/tratamiento-Photoroom.png" class="card-img-top mt-4"
+                        alt=">Tratamiento capilar 120ml">
+                    <div class="card-body">
+                        <h4 class="card-title">Tratamiento capilar 120ml</h4>
+                        <p class="card-text">
+                            Nutre, fortalece, suaviza y protege <br />
+                            Es ideal para cabellos maltratados ya que es enriquecido con extractos
+                            naturales como el pantenol, colageno y ceramidas<br />
+                            <strong>Valor: $28.000</strong> <br>
+                            <a href="#" class="btn btn-primary my-3">Agregar al carrito</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-4">
+                <div class="card h-100 acondicionador_crema">
+                    <img src="./img/cuidado-capilar/acondicionador.jpg" class="card-img-top mt-4"
+                        alt=">Nutricion + Acondicionador 400ml">
+                    <div class="card-body">
+                        <h4 class="card-title">Nutricion + Acondicionador 400ml</h4>
+                        <p class="card-text">
+                            Protege, regenera, suaviza y da sedosidad<br />
+                            Suaviza el cabello y facilita su peinado<br />
+                            <strong>Valor: $27.000</strong> <br>
+                            <a href="#" class="btn btn-primary my-3">Agregar al carrito</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 acondicionador_crema">
+                    <img src="./img/cuidado-capilar/crema de peinar.jpg" class="card-img-top mt-4"
+                        alt="> Crema de peinar 400ml">
+                    <div class="card-body">
+                        <h4 class="card-title"> Crema de peinar 400ml</h4>
+                        <p class="card-text">
+                            Protege, regenera, da volumen, anti frizz y suaviza<br />
+                            Facilita la definicion de las ondas o rizos<br />
+                            <strong>Valor: $28.000</strong> <br>
+                            <a href="#" class="btn btn-primary my-3">Agregar al carrito</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <footer class="simple-footer mt-5">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img width="170px" src="./img/home/logo_magitupiel.png" alt="">
+                <span>&copy; 2024 Magitupiel <br> Derechos reservados</span>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
